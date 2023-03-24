@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "blueprints_server"
+version = "0.0.1"
+authors = [
+  { name="Ben Thomasson", email="ben.thomasson@gmail.com" },
+]
+description = "Blueprints server"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/benthomasson/blueprints_server"
+"Bug Tracker" = "https://github.com/benthomasson/blueprints_server/issues"
+
+
+[tool.pytest.ini_options]
+log_cli = false
+log_cli_level = "INFO"
+log_cli_format = "%(asctime)s [%(levelname)8s] %(message)s (%(filename)s:%(lineno)s)"
+log_cli_date_format = "%Y-%m-%d %H:%M:%S"
